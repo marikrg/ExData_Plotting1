@@ -6,8 +6,7 @@ plotEnergySubMeteringGraph <- function(data) {
   lines(data$Date, data$Sub_metering_3, type="l", col="blue")
   legend("topright", legend=names(data[7:9]), lty=1, col=c("black","red","blue"))
 }
-
 data <- loadData()
-png(filename = "plot3.png")
+png(filename = "../img/plot3.png")
 plotEnergySubMeteringGraph(data)
 dev.off()

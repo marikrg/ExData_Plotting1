@@ -5,8 +5,7 @@ plotGlobalActivePowerHistogram <- function(data) {
   xLabel <- "Global Active Power (killowats)"
   hist(data$Global_active_power, col="red", main=title, xlab=xLabel)
 }
-
 data <- loadData()
-png(filename = "plot1.png")
+png(filename = "../img/plot1.png")
 plotGlobalActivePowerHistogram(data)
 dev.off()
